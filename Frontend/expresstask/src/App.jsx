@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     axios.get("http://localhost:7000/api/products")
       .then(response => setProducts(response.data))
-      .catch(error => console.error("Error fetching message:", error));
+      .catch(error => console.error("Error fetching products:", error));
   }, []);
 
 
